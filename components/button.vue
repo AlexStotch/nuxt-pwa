@@ -1,6 +1,6 @@
 <template>
-    <div class="text-center">
-        <button class="bg-purple-600 hover:bg-purple-700 text-white p-2" 
+    <div>
+        <button
             @click="emitClick">Nouveau chat
         </button>
     </div>
@@ -16,3 +16,8 @@ export default defineComponent({
     }
 });
 </script>
+<style lang='scss'>
+button {
+    background-color: red;
+}
+</style>

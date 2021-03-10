@@ -1,14 +1,12 @@
 version: '3.7'
 
-services:
-  nuxt:
-    image: gerardojunior/nuxtjs:stable
-    restart: on-failure
-    build: 
-      context: .
+services: 
+  nuxt-app:
+    build: ./
+    container_name: nuxt-app
+    restart: always
     volumes:
-      - '.:/usr/src/nuxt-app' 
+      - .:/usr/src/nuxt-app
     ports:
-      - 3000:3000
-    command: 
-      "npm run dev"    
+      - "3000:3000"
+    command: "npm run dev"  

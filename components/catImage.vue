@@ -1,6 +1,6 @@
 <template>
-<div class="h-screen grid grid-cols-1">
-  <div class="text-center p-5">
+<div>
+  <div>
     <img :src="image.url"/>
   </div>
   <Button @clicked="fetchCatImage"></Button>
