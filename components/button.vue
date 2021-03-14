@@ -1,6 +1,6 @@
 <template>
     <div>
-        <button class="btn" @click="emitClick">Nouveau chat</button>
+        <button class="btn btn-primary" @click="emitClick">Nouveau chat</button>
     </div>
 </template>
 <script lang="ts">
