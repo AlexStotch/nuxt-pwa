@@ -9,4 +9,13 @@ services:
       - .:/usr/src/nuxt-app
     ports:
       - "3000:3000"
-    command: "npm run dev"  
+    command: "npm run dev" 
+  ngrok:
+    image: shkoliar/ngrok:latest
+    ports:
+      - 4551:4551
+    links:
+      - nuxt-app
+    environment:
+      - DOMAIN=nuxt-app
+      - PORT=3000   
