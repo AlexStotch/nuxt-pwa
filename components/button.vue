@@ -1,8 +1,6 @@
 <template>
     <div>
-        <button
-            @click="emitClick">Nouveau chat
-        </button>
+        <button class="btn" @click="emitClick">Nouveau chat</button>
     </div>
 </template>
 <script lang="ts">
@@ -18,6 +16,10 @@ export default defineComponent({
 </script>
 <style lang='scss'>
 button {
-    background-color: red;
-}
+    background-color:#fff;
+    color: #555;
+    cursor: pointer;
+    padding: 3%;
+    margin: 3%;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;}
 </style>

@@ -7,6 +7,12 @@ export default {
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: '' }
     ],
+    script: [
+      {
+        src: 'https://connect.facebook.net/en_US/sdk.js', defer: true, async: true, body: true,
+        src: 'https://connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v10.0&appId=1396011437403037&autoLogAppEvents=1', defer: true, async: true, body: true,
+      }
+    ]
     // link: [
     //   { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     // ]
@@ -59,6 +65,7 @@ export default {
 
   env: {
     baseUrl : 'https://api.thecatapi.com/v1/',
-    apiKey: '0ed9c2a8-c5df-4298-85c5-807ad2c7b433'
+    apiKey: '0ed9c2a8-c5df-4298-85c5-807ad2c7b433',
+    fbAppToken: '1396011437403037|ch1R7mb69Fc_6K-7GjgX6xhMk38'
   }
 }
